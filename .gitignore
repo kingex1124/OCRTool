@@ -1,0 +1,11 @@
+﻿################################################################################
+# 這個 .gitignore 檔案由 Microsoft(R) Visual Studio 自動建立。
+################################################################################
+
+/.vs/OCRTool/v16
+/OCRTool/bin/Debug/Tesseract.dll
+/OCRTool/bin/Debug/OCRTool.pdb
+/OCRTool/bin/Debug/OCRTool.exe.config
+/OCRTool/bin/Debug/OCRTool.exe
+/OCRTool/obj/Debug
+/OCRTool/bin/Debug
