@@ -93,7 +93,7 @@
             this.cbLag.FormattingEnabled = true;
             this.cbLag.Items.AddRange(new object[] {
             "eng",
-            "chi",
+            "chi_tra",
             "jpn",
             "bod"});
             this.cbLag.Location = new System.Drawing.Point(528, 16);
