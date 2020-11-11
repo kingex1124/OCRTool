@@ -45,6 +45,12 @@ namespace OCRTool
                 //取得圖片bitmap檔
                 Bitmap resultBitmapt = Bitmap2Monochrome.ConvertTo1Bit(new Bitmap(labDataPath.Text));
 
+                ////存取成tif的路徑
+                //string tifFile = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory + "test", ".tif");
+
+                ////把圖片轉存成tif檔
+                //resultBitmapt.Save(tifFile, System.Drawing.Imaging.ImageFormat.Tiff);
+
                 //OCR元件路徑
                 string octData = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tessdata");
 
@@ -54,7 +60,7 @@ namespace OCRTool
                     //全彩掃描
                     using (Bitmap bitmap = new Bitmap(labDataPath.Text))
                     {
-                        using (Page page = tesseractEngine.Process(bitmap, null))
+                        using (Page page = tesseractEngine.Process(bitmap,  PageSegMode.Auto))
                         {
                             string text = page.GetText().Trim();
                             tbOCRStr.Text = text;

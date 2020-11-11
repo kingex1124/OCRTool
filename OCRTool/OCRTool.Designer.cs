@@ -73,6 +73,7 @@
             this.tbOCRStr.Location = new System.Drawing.Point(21, 78);
             this.tbOCRStr.Multiline = true;
             this.tbOCRStr.Name = "tbOCRStr";
+            this.tbOCRStr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbOCRStr.Size = new System.Drawing.Size(755, 313);
             this.tbOCRStr.TabIndex = 3;
             // 
