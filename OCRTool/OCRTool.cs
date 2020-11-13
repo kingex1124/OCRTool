@@ -63,11 +63,13 @@ namespace OCRTool
                     //全彩掃描
                     using (Bitmap bitmap = new Bitmap(labDataPath.Text))
                     {
+                        btnOCR.Enabled = false;
                         using (Page page = tesseractEngine.Process(bitmap,  PageSegMode.Auto))
                         {
                             string text = page.GetText().Trim();
                             tbOCRStr.Text = text;
                         }
+                        btnOCR.Enabled = true;
                     }
                 }
             }
