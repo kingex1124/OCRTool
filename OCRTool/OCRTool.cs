@@ -33,6 +33,8 @@ namespace OCRTool
 
                 if (!File.Exists(labDataPath.Text))
                     MessageBox.Show("檔案不存在");
+                else
+                    pbImage.Image = new Bitmap(labDataPath.Text);
             }
         }
 
@@ -43,8 +45,9 @@ namespace OCRTool
                 tbOCRStr.Text = string.Empty;
 
                 //取得圖片bitmap檔
-                Bitmap resultBitmapt = Bitmap2Monochrome.ConvertTo1Bit(new Bitmap(labDataPath.Text));
-
+                //Bitmap resultBitmapt = Bitmap2Monochrome.ConvertTo1Bit(new Bitmap(labDataPath.Text));
+                Bitmap resultBitmapt = new Bitmap(labDataPath.Text);
+     
                 ////存取成tif的路徑
                 //string tifFile = string.Format("{0}{1}", AppDomain.CurrentDomain.BaseDirectory + "test", ".tif");
 

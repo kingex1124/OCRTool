@@ -35,6 +35,10 @@
             this.btnOCR = new System.Windows.Forms.Button();
             this.cbLag = new System.Windows.Forms.ComboBox();
             this.labLag = new System.Windows.Forms.Label();
+            this.pbImage = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOpenImg
@@ -70,7 +74,7 @@
             // tbOCRStr
             // 
             this.tbOCRStr.Font = new System.Drawing.Font("新細明體", 24F);
-            this.tbOCRStr.Location = new System.Drawing.Point(21, 78);
+            this.tbOCRStr.Location = new System.Drawing.Point(12, 360);
             this.tbOCRStr.Multiline = true;
             this.tbOCRStr.Name = "tbOCRStr";
             this.tbOCRStr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -80,7 +84,7 @@
             // btnOCR
             // 
             this.btnOCR.Font = new System.Drawing.Font("新細明體", 9F);
-            this.btnOCR.Location = new System.Drawing.Point(711, 397);
+            this.btnOCR.Location = new System.Drawing.Point(782, 360);
             this.btnOCR.Name = "btnOCR";
             this.btnOCR.Size = new System.Drawing.Size(65, 51);
             this.btnOCR.TabIndex = 4;
@@ -112,11 +116,30 @@
             this.labLag.TabIndex = 6;
             this.labLag.Text = "語系";
             // 
+            // pbImage
+            // 
+            this.pbImage.Location = new System.Drawing.Point(0, 0);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(755, 267);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbImage.TabIndex = 7;
+            this.pbImage.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.pbImage);
+            this.panel1.Location = new System.Drawing.Point(12, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(755, 267);
+            this.panel1.TabIndex = 8;
+            // 
             // OCRTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(871, 685);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labLag);
             this.Controls.Add(this.cbLag);
             this.Controls.Add(this.btnOCR);
@@ -126,6 +149,9 @@
             this.Controls.Add(this.btnOpenImg);
             this.Name = "OCRTool";
             this.Text = "OCRTool";
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +166,7 @@
         private System.Windows.Forms.Button btnOCR;
         private System.Windows.Forms.ComboBox cbLag;
         private System.Windows.Forms.Label labLag;
+        private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.Panel panel1;
     }
 }
