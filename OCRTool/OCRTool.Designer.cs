@@ -43,9 +43,10 @@
             // 
             // btnOpenImg
             // 
-            this.btnOpenImg.Location = new System.Drawing.Point(21, 16);
+            this.btnOpenImg.Location = new System.Drawing.Point(32, 24);
+            this.btnOpenImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpenImg.Name = "btnOpenImg";
-            this.btnOpenImg.Size = new System.Drawing.Size(69, 56);
+            this.btnOpenImg.Size = new System.Drawing.Size(104, 84);
             this.btnOpenImg.TabIndex = 0;
             this.btnOpenImg.Text = "開啟圖片";
             this.btnOpenImg.UseVisualStyleBackColor = true;
@@ -55,9 +56,10 @@
             // 
             this.labDataPath.AutoSize = true;
             this.labDataPath.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labDataPath.Location = new System.Drawing.Point(108, 52);
+            this.labDataPath.Location = new System.Drawing.Point(162, 78);
+            this.labDataPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labDataPath.Name = "labDataPath";
-            this.labDataPath.Size = new System.Drawing.Size(76, 20);
+            this.labDataPath.Size = new System.Drawing.Size(115, 30);
             this.labDataPath.TabIndex = 1;
             this.labDataPath.Text = "DataAdd";
             // 
@@ -65,28 +67,31 @@
             // 
             this.labPathShow.AutoSize = true;
             this.labPathShow.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labPathShow.Location = new System.Drawing.Point(108, 16);
+            this.labPathShow.Location = new System.Drawing.Point(162, 24);
+            this.labPathShow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labPathShow.Name = "labPathShow";
-            this.labPathShow.Size = new System.Drawing.Size(89, 20);
+            this.labPathShow.Size = new System.Drawing.Size(133, 30);
             this.labPathShow.TabIndex = 2;
             this.labPathShow.Text = "檔案位置";
             // 
             // tbOCRStr
             // 
             this.tbOCRStr.Font = new System.Drawing.Font("新細明體", 24F);
-            this.tbOCRStr.Location = new System.Drawing.Point(12, 360);
+            this.tbOCRStr.Location = new System.Drawing.Point(18, 540);
+            this.tbOCRStr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbOCRStr.Multiline = true;
             this.tbOCRStr.Name = "tbOCRStr";
             this.tbOCRStr.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbOCRStr.Size = new System.Drawing.Size(755, 313);
+            this.tbOCRStr.Size = new System.Drawing.Size(1130, 468);
             this.tbOCRStr.TabIndex = 3;
             // 
             // btnOCR
             // 
             this.btnOCR.Font = new System.Drawing.Font("新細明體", 9F);
-            this.btnOCR.Location = new System.Drawing.Point(782, 360);
+            this.btnOCR.Location = new System.Drawing.Point(1173, 540);
+            this.btnOCR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOCR.Name = "btnOCR";
-            this.btnOCR.Size = new System.Drawing.Size(65, 51);
+            this.btnOCR.Size = new System.Drawing.Size(98, 76);
             this.btnOCR.TabIndex = 4;
             this.btnOCR.Text = "OCR辨識";
             this.btnOCR.UseVisualStyleBackColor = true;
@@ -95,30 +100,28 @@
             // cbLag
             // 
             this.cbLag.FormattingEnabled = true;
-            this.cbLag.Items.AddRange(new object[] {
-            "eng",
-            "chi_tra",
-            "jpn",
-            "bod"});
-            this.cbLag.Location = new System.Drawing.Point(528, 16);
+            this.cbLag.Location = new System.Drawing.Point(792, 24);
+            this.cbLag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbLag.Name = "cbLag";
-            this.cbLag.Size = new System.Drawing.Size(121, 20);
+            this.cbLag.Size = new System.Drawing.Size(180, 26);
             this.cbLag.TabIndex = 5;
-            this.cbLag.Text = "eng";
+            this.cbLag.Text = "請選擇";
             // 
             // labLag
             // 
             this.labLag.AutoSize = true;
             this.labLag.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labLag.Location = new System.Drawing.Point(473, 16);
+            this.labLag.Location = new System.Drawing.Point(710, 24);
+            this.labLag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labLag.Name = "labLag";
-            this.labLag.Size = new System.Drawing.Size(49, 20);
+            this.labLag.Size = new System.Drawing.Size(73, 30);
             this.labLag.TabIndex = 6;
             this.labLag.Text = "語系";
             // 
             // pbImage
             // 
             this.pbImage.Location = new System.Drawing.Point(0, 0);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(755, 267);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -129,16 +132,17 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.pbImage);
-            this.panel1.Location = new System.Drawing.Point(12, 87);
+            this.panel1.Location = new System.Drawing.Point(18, 130);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(755, 267);
+            this.panel1.Size = new System.Drawing.Size(1132, 400);
             this.panel1.TabIndex = 8;
             // 
             // OCRTool
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 685);
+            this.ClientSize = new System.Drawing.Size(1306, 1028);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labLag);
             this.Controls.Add(this.cbLag);
@@ -147,6 +151,7 @@
             this.Controls.Add(this.labPathShow);
             this.Controls.Add(this.labDataPath);
             this.Controls.Add(this.btnOpenImg);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OCRTool";
             this.Text = "OCRTool";
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
