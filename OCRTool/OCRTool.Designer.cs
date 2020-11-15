@@ -37,13 +37,15 @@
             this.labLag = new System.Windows.Forms.Label();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOpenImg
             // 
-            this.btnOpenImg.Location = new System.Drawing.Point(32, 24);
+            this.btnOpenImg.Location = new System.Drawing.Point(28, 33);
             this.btnOpenImg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpenImg.Name = "btnOpenImg";
             this.btnOpenImg.Size = new System.Drawing.Size(104, 84);
@@ -56,7 +58,7 @@
             // 
             this.labDataPath.AutoSize = true;
             this.labDataPath.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labDataPath.Location = new System.Drawing.Point(162, 78);
+            this.labDataPath.Location = new System.Drawing.Point(158, 87);
             this.labDataPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labDataPath.Name = "labDataPath";
             this.labDataPath.Size = new System.Drawing.Size(115, 30);
@@ -67,7 +69,7 @@
             // 
             this.labPathShow.AutoSize = true;
             this.labPathShow.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labPathShow.Location = new System.Drawing.Point(162, 24);
+            this.labPathShow.Location = new System.Drawing.Point(158, 33);
             this.labPathShow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labPathShow.Name = "labPathShow";
             this.labPathShow.Size = new System.Drawing.Size(133, 30);
@@ -77,7 +79,7 @@
             // tbOCRStr
             // 
             this.tbOCRStr.Font = new System.Drawing.Font("新細明體", 24F);
-            this.tbOCRStr.Location = new System.Drawing.Point(18, 540);
+            this.tbOCRStr.Location = new System.Drawing.Point(28, 558);
             this.tbOCRStr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbOCRStr.Multiline = true;
             this.tbOCRStr.Name = "tbOCRStr";
@@ -88,7 +90,7 @@
             // btnOCR
             // 
             this.btnOCR.Font = new System.Drawing.Font("新細明體", 9F);
-            this.btnOCR.Location = new System.Drawing.Point(1173, 540);
+            this.btnOCR.Location = new System.Drawing.Point(1183, 558);
             this.btnOCR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOCR.Name = "btnOCR";
             this.btnOCR.Size = new System.Drawing.Size(98, 76);
@@ -100,7 +102,7 @@
             // cbLag
             // 
             this.cbLag.FormattingEnabled = true;
-            this.cbLag.Location = new System.Drawing.Point(792, 24);
+            this.cbLag.Location = new System.Drawing.Point(902, 33);
             this.cbLag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbLag.Name = "cbLag";
             this.cbLag.Size = new System.Drawing.Size(180, 26);
@@ -111,7 +113,7 @@
             // 
             this.labLag.AutoSize = true;
             this.labLag.Font = new System.Drawing.Font("新細明體", 15F);
-            this.labLag.Location = new System.Drawing.Point(710, 24);
+            this.labLag.Location = new System.Drawing.Point(820, 33);
             this.labLag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labLag.Name = "labLag";
             this.labLag.Size = new System.Drawing.Size(73, 30);
@@ -132,33 +134,44 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.pbImage);
-            this.panel1.Location = new System.Drawing.Point(18, 130);
+            this.panel1.Location = new System.Drawing.Point(28, 136);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1132, 400);
             this.panel1.TabIndex = 8;
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.btnOpenImg);
+            this.panel2.Controls.Add(this.tbOCRStr);
+            this.panel2.Controls.Add(this.btnOCR);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.labDataPath);
+            this.panel2.Controls.Add(this.labLag);
+            this.panel2.Controls.Add(this.labPathShow);
+            this.panel2.Controls.Add(this.cbLag);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1306, 1049);
+            this.panel2.TabIndex = 9;
+            // 
             // OCRTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1306, 1028);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.labLag);
-            this.Controls.Add(this.cbLag);
-            this.Controls.Add(this.btnOCR);
-            this.Controls.Add(this.tbOCRStr);
-            this.Controls.Add(this.labPathShow);
-            this.Controls.Add(this.labDataPath);
-            this.Controls.Add(this.btnOpenImg);
+            this.ClientSize = new System.Drawing.Size(1306, 1049);
+            this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OCRTool";
             this.Text = "OCRTool";
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -173,5 +186,6 @@
         private System.Windows.Forms.Label labLag;
         private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
